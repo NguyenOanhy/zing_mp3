@@ -24,7 +24,7 @@ const Home = () => {
             <Section data={Chill} />
             <Section data={newMusic} />
             <Section data={favoritedArtist} />
-            <div className='w-full h-[200px]'></div>
+            <div className='w-full h-[100px]'></div>
         </div>
         : <div className='w-full h-full flex items-center justify-center '>
         <Loading />

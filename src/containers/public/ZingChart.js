@@ -3,7 +3,7 @@ import { apiGetChartHome } from '../../apis'
 import bgChart from '../../assets/bg-chart.jpg'
 import { Line } from 'react-chartjs-2'
 import { Chart } from 'chart.js/auto'
-import { SongItem, RankList } from '../../components'
+import { SongItem, RankList, Loading } from '../../components'
 import _ from 'lodash'
 
 
@@ -95,7 +95,6 @@ const ZingChart = () => {
         setData({ labels, datasets })
     }
   }, [chartData])
-  // console.log(Object.entries(chartData?.weekChart))
   
   return (
     <div>
@@ -108,7 +107,7 @@ const ZingChart = () => {
                  <h3 className='font-bold text-[40px] text-main-500'>#zingchart</h3>
               </div>
               <div className='flex-7 absolute top-1/3 right-0 left-0 bottom-0 px-[60px]'>
-                        {data &&<Line ref={chartRef} data={data} options={options} />}
+                        {data ? <Line ref={chartRef} data={data} options={options} /> : <div className='w-full h-full flex items-center justify-center'> <Loading/> </div>}
                         <div className='tooltip' style={{ top: tooltip.top, left: tooltip.left, position: 'absolute', opacity: tooltip.opacity }}>
                             <SongItem
                                 thumbnail={chartData?.RTChart?.items?.find(i => i.encodeId === tooltipData)?.thumbnail}
@@ -130,7 +129,7 @@ const ZingChart = () => {
         <div className='absolute top-0 left-0 right-0 bottom-1/2 flex flex-col gap-8 mt-8 px-[60px]'>
           <h3 className='font-bold text-[40px] text-main-500'>Bảng Xếp Hạng Tuần</h3>
           <div className='flex gap-4 h-fit'>
-              {chartData?.weekChart && Object.entries(chartData?.weekChart)?.map((item, index) => (
+              {chartData?.weekChart ? Object.entries(chartData?.weekChart)?.map((item, index) => (
                 <div className='flex-1 bg-gray-200 rounded-md px-[12px] py-5' key={index}>
                   <h3 className='text-[24px] text-main-500 font-bold'>{item[0] === 'vn' ? 'Việt Nam' : item[0] === 'us' ? 'US-UK' : item[0] === 'korea' ? 'K-Pop' : ''}</h3>
                   <div className='flex-1 mt-4 h-fit'>
@@ -142,11 +141,11 @@ const ZingChart = () => {
                      />
                   </div>
                 </div>
-            ))}
+            )) : <div className ='w-full h-full flex items-center justify-center'><Loading/></div>}
           </div>
         </div>
       </div>
-      <div className='w-full h-[500px]'></div>
+      {/* <div className='w-full h-[50px]'></div> */}
     </div>
   )
 }
