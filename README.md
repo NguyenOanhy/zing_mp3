@@ -1,4 +1,4 @@
-#Cài đặt phần mềm
+# Cài đặt phần mềm
 - Yêu cầu: Cần tải IDE tương thích (Visual Studio, Visual Studio Code),
 NodeJS, MongoDB, MongoDB Compass, các npm cần thiết
 - Cài đặt:
