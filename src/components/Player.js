@@ -61,7 +61,7 @@ const Player = ({ setIsShowRightSidebar }) => {
     if (isPlaying && thumbRef.current) {
       audio.play()
       intervalId = setInterval(()=> {
-        let percent = Math.round(audio.currentTime *10000 / songInfo.duration) / 100
+        let percent = Math.round(audio.currentTime *10000 / songInfo?.duration) / 100
         thumbRef.current.style.cssText = `right: ${100 - percent}%`
         setcurSeconds(Math.round(audio.currentTime))
       }, 200)
@@ -110,8 +110,8 @@ const handleClickProgressBar = (e) => {
   const trackRect = trackRef.current.getBoundingClientRect()
   const percent = Math.round((e.clientX - trackRect.left) *10000 / trackRect.width) / 100
   thumbRef.current.style.cssText = `right: ${100 - percent}%`
-  audio.currentTime = percent * songInfo.duration / 100
-  setcurSeconds(Math.round(percent * songInfo.duration / 100))
+  audio.currentTime = percent * songInfo?.duration / 100
+  setcurSeconds(Math.round(percent * songInfo?.duration / 100))
 }
 
 const handleNextSong = () => { 
