@@ -12,7 +12,7 @@ const SearchAll = () => {
       <div className='flex flex-col'>
         <h3 className='text-lg font-bold mb-5'>Nổi bật</h3>
         <div className='flex gap-8 '>
-            {searchData?.top && <div className='p-[10px] cursor-pointer flex-1 bg-main-200 rounded-md flex gap-8 items-center'> 
+            {searchData?.top && <div className='p-[10px] cursor-pointer flex-1 bg-main-200 rounded-md flex gap-8 items-center hover:bg-main-100'> 
                 <img src={searchData.top.thumbnail} alt="avatar" className={`w-[84px] h-[84px] object-cover ${searchData.top.objectType === 'artist' && 'rounded-full'}`}/>
                 <div className='flex flex-col text-xs'>
                     <span className='mb-[6px]'>{searchData.top.objectType === 'artist' ? 'Nghệ sĩ' : ' '}</span>
@@ -28,7 +28,7 @@ const SearchAll = () => {
                     title={item.title}
                     artists={item.artistsName}
                     size='w-[84px] h-[84px]'
-                    style='bg-main-200'
+                    style='bg-main-200 hover:bg-main-100'
                  />
                  </div>
               ))}

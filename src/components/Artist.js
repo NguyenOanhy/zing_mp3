@@ -26,7 +26,7 @@ const Artist = ({image, title, follower, link}) => {
           className='bg-main-500 px-4 py-1 text-white text-sm rounded-l-full rounded-r-full flex items-center justify-center gap-1'
           >
               <span><AiOutlineUserAdd/></span>
-              <span className='text-xs opacity-80'>QUAN TÂM</span>
+              <span className='text-xs opacity-80 hover:opacity-100'>QUAN TÂM</span>
           </button>
        </div>
     </div>
