@@ -9,7 +9,7 @@ const Home = () => {
         <>
         {(happyWeekend && top100 && Chill && newMusic && weekChart && favoritedArtist) ? <div className='overflow-y-auto w-full'> 
             <Slider />
-            <Section data={tamTrang} />
+            {tamTrang && <Section data={tamTrang} />}
             <Section data={happyWeekend} />
             <NewRelease />
             <Section data={top100} />
