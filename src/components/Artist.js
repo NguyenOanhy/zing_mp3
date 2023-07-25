@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { memo } from 'react' 
-import { handleNumber } from '../ultis/fn'
+import { handleNumber } from '../utils/fn'
 import {AiOutlineUserAdd} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 

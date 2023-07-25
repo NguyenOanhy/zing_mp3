@@ -1,10 +1,10 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import { useSelector , useDispatch} from 'react-redux'
-import { getArrSlider } from '../ultis/fn'
+import { getArrSlider } from '../utils/fn'
 import * as actions from '../store/actions'
 import { useNavigate } from 'react-router-dom'
 import {Button} from './'
-import icons from '../ultis/icons'
+import icons from '../utils/icons'
 const {MdArrowBackIosNew, MdArrowForwardIos} = icons
 
 var interValId

@@ -1,7 +1,7 @@
 import React, {useState, useEffect, memo} from 'react'
 import { List } from './'
 import { useNavigate } from 'react-router-dom'
-import path from '../ultis/path'
+import path from '../utils/path'
 
 
 const RankList = ({data, number, isHideAlbum, link}) => {

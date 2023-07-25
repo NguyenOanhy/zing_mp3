@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import icons from '../ultis/icons'
+import icons from '../utils/icons'
 import {SongItem} from './'
 import { useSelector } from 'react-redux'
 import { apiGetDetailPlaylist } from '../apis'

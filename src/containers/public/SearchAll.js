@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { handleNumber } from '../../ultis/fn'
+import { handleNumber } from '../../utils/fn'
 import {SongItem, List, SectionItem, Artist} from '../../components'
 import { divide } from 'lodash'
 

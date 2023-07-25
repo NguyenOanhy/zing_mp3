@@ -6,7 +6,7 @@ import { Lists, AudioLoading } from '../../components'
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { useDispatch, useSelector } from 'react-redux'
 import * as actions from '../../store/actions'
-import icons from '../../ultis/icons'
+import icons from '../../utils/icons'
 
 const { BsPlayFill } = icons
 

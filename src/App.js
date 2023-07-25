@@ -3,7 +3,7 @@ import { Home, Login, Public, Personal, Album, WeekRank, ZingChart, Search, Sear
 import { ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import {Routes, Route} from 'react-router-dom'
-import path from "./ultis/path";
+import path from "./utils/path";
 import { useEffect } from "react";
 import * as actions from "./store/actions"
 import { useDispatch } from "react-redux";

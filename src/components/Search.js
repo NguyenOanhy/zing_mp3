@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
-import icons from '../ultis/icons'
+import icons from '../utils/icons'
 import { apiSearch } from '../apis'
 import * as actions from '../store/actions'
 import { useDispatch } from 'react-redux'
 import { useNavigate, createSearchParams } from 'react-router-dom'
-import path from "../ultis/path"
+import path from "../utils/path"
 
 const {FiSearch, GrClose} = icons
 

@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import * as apis from '../apis'
-import icons from '../ultis/icons'
+import icons from '../utils/icons'
 import * as actions from '../store/actions'
 import moment from 'moment'
 import { toast } from 'react-toastify'

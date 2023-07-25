@@ -1,6 +1,6 @@
 import moment from 'moment'
 import React, {memo} from 'react'
-import icons from '../ultis/icons'
+import icons from '../utils/icons'
 import { useDispatch } from 'react-redux'
 import * as actions from '../store/actions'
 

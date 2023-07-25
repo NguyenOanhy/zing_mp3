@@ -6,8 +6,8 @@ import { useSelector } from 'react-redux'
 import { SongItem } from './'
 import _ from 'lodash'
 import { Link } from 'react-router-dom'
-import path from '../ultis/path'
-import icons from '../ultis/icons'
+import path from '../utils/path'
+import icons from '../utils/icons'
 
 const {BsPlayFill} = icons
 

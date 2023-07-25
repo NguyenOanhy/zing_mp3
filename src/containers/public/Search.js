@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { Outlet } from 'react-router-dom'
 import { NavLink, useSearchParams } from 'react-router-dom'
-import { searchMenu } from '../../ultis/menu'
+import { searchMenu } from '../../utils/menu'
 import { useSelector } from 'react-redux'
 
 const notActiveStyle = 'px-4 hover:text-main-500 font-semibold cursor-pointer'
